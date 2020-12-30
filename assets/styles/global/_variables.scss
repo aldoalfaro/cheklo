@@ -15,3 +15,9 @@ $link-color:    $secondary;
 
 $font-family-sans-serif:      "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-base:            $font-family-sans-serif;
+
+// Breadcrumbs
+
+$breadcrumb-font-size:              .75rem;
+$breadcrumb-bg:                     transparent;
+$breadcrumb-padding-x:              0;

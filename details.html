@@ -1,0 +1,404 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cheklo</title>
+    <link href="dist/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="navbar">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="dist/images/logo.png" alt="" width="128" height="49">
+        </a>
+
+        <form action="" id="search" class="search search--navbar">
+            <div class="input-group">
+                <div class="input-group-prepend search-location">
+                    <button class="btn btn-light dropdown-toggle search-location-btn" type="button" id="btnLocation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="search-location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+                            </svg>
+                        </span>
+                        <span class="search-location-data">
+                            <small>Tu ubicación</small><br>
+                            <strong>90001</strong>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="btnLocation">  
+                        <div class="p-3">
+                            <h2>Tu ubicación</h2>
+                            <div class="text-muted">Necesitamos tu ubicación para mostrarte los precios de tu localidad.</div>
+                        </div>
+                        <div class="p-3 mb-3 bg-light">
+                            <label for="">Ingresa tu código postal</label>
+                            <input type="text" class="form-control" value="900">
+                        </div>
+                        <a class="dropdown-item" href="#">900123 Colonia Álvaro Obregón</a>
+                        <a class="dropdown-item" href="#">900124 Las Ámericas, Álvaro Obregón</a>
+                        <a class="dropdown-item" href="#">900125 Colonia Benito Juarez</a>
+                    </div>
+                </div>
+                <input type="text" class="form-control search-input" placeholder="Escribe el nombre de un producto" aria-label="Escribe el nombre de un producto">
+                <div class="input-group-append">
+                  <button class="btn btn-primary search-submit" type="button" id="">Buscar <span class="d-none d-sm-inline">en Cheklo</span></button>
+                </div>
+            </div>
+        </form>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link link-shopping-list" href="#">
+                    <span class="shopping-list-icon">
+                        <svg width="16px" height="16px" viewBox="0 0 16 16"  fill="currentColor" class="bi bi-list" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill-rule="evenodd" d="M6,5.625 C6,5.00367966 6.50367966,4.5 7.125,4.5 L11.625,4.5 C12.2463203,4.5 12.75,5.00367966 12.75,5.625 C12.75,6.24632034 12.2463203,6.75 11.625,6.75 L7.125,6.75 C6.50367966,6.75 6,6.24632034 6,5.625 Z M0,10.125 C0,9.50367966 0.503679656,9 1.125,9 L2.625,9 C3.24632034,9 3.75,9.50367966 3.75,10.125 C3.75,10.7463203 3.24632034,11.25 2.625,11.25 L1.125,11.25 C0.503679656,11.25 0,10.7463203 0,10.125 Z M0,5.625 C0,5.00367966 0.503679656,4.5 1.125,4.5 L2.625,4.5 C3.24632034,4.5 3.75,5.00367966 3.75,5.625 C3.75,6.24632034 3.24632034,6.75 2.625,6.75 L1.125,6.75 C0.503679656,6.75 0,6.24632034 0,5.625 Z M0,1.125 C0,0.503679656 0.503679656,0 1.125,0 L2.625,0 C3.24632034,0 3.75,0.503679656 3.75,1.125 C3.75,1.74632034 3.24632034,2.25 2.625,2.25 L1.125,2.25 C0.503679656,2.25 0,1.74632034 0,1.125 Z M6,10.125 C6,9.50367966 6.50367966,9 7.125,9 L18.375,9 C18.9963203,9 19.5,9.50367966 19.5,10.125 C19.5,10.7463203 18.9963203,11.25 18.375,11.25 L7.125,11.25 C6.50367966,11.25 6,10.7463203 6,10.125 Z M6,1.125 C6,0.503679656 6.50367966,0 7.125,0 L18.375,0 C18.9963203,0 19.5,0.503679656 19.5,1.125 C19.5,1.74632034 18.9963203,2.25 18.375,2.25 L7.125,2.25 C6.50367966,2.25 6,1.74632034 6,1.125 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                        </svg>
+                    </span>
+                    Lista de compras
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container page-container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="results.html">‹ Volver a resultados</a></li>
+              <li class="breadcrumb-item"><a href="#">Abarrotes</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Cereal Zucaritas Kelloggs de 710 Gr.</li>
+            </ol>
+        </nav>
+
+        <div class="product-details">
+            <div class="product-details-gallery">
+                <div class="gallery">
+                    <div class="gallery-main-img">
+                        <img src="http://placehold.jp/470x470.png" alt="">
+                    </div>
+                    <div class="gallery-thumbs">
+                        <a href="" class="thumb">
+                            <img src="http://placehold.jp/50x50.png" alt="">
+                        </a>
+                        <a href="" class="thumb">
+                            <img src="http://placehold.jp/50x50.png" alt="">
+                        </a>
+                        <a href="" class="thumb">
+                            <img src="http://placehold.jp/50x50.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-details-info">
+                <h1>Cereal Zucaritas Kelloggs de 710 Gr.</h1>
+                <div class="product-details-category">
+                    <span class="mr-1">Marca: <a href="#">Kellogs</a></span>
+                    <span class="mr-1"></span>Departamento: <a href="#">Abarrotes</a></span>
+                </div>
+                <div class="product-details-description">
+                    <p>Caja con 710 gr de zucaritas.</p>
+                    <p>Está compuesto de maíz tostado.</p>
+                    <p>Hojuelas de maíz con azúcar adicionadas con complejo B, hierro y zinc.</p>
+                    <p>Técnicamente se le conoce como hojuelas de maíz azucaradas.</p>
+                    <p>Su presentación puede variar.</p>
+                </div>
+            </div>
+            <div class="product-details-prices">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Precios</h2>
+                    </div>
+                    <table class="table price-table">
+                        <tbody>
+                            <tr class="price price--lowest">
+                                <th class="price-store">Costco</th>
+                                <td class="price-amount"><strong>$135</strong><span class="dec">.40</span></td>
+                            </tr>
+                            <tr class="price">
+                                <th class="price-store">Costco</th>
+                                <td class="price-amount"><strong>$135</strong><span class="dec">.40</span></td>
+                            </tr>
+                            <tr class="price">
+                                <th class="price-store">Costco</th>
+                                <td class="price-amount"><strong>$135</strong><span class="dec">.40</span></td>
+                            </tr>
+                            <tr class="price">
+                                <th class="price-store">Soriana</th>
+                                <td class="price-amount"><strong>$135</strong><span class="dec">.40</span></td>
+                            </tr>
+                            <tr class="price">
+                                <th class="price-store">Bodega Aurrerá</th>
+                                <td class="price-amount"><strong>$135</strong><span class="dec">.40</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="card-body">
+                        <button class="btn btn-primary btn-block">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                Agregar a lista de compras
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="price-history">
+            <h2>Historial de precio promedio</h2>
+            <img src="http://placehold.jp/1200x400.png" alt="">
+        </div>
+
+        <div class="similar-products">
+            <h2>Productos similares</h2>
+            <div class="product-list">
+                <div class="product-container">
+                    <div class="product">
+                        <a href="#" class="save-btn save-btn--saved">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="product-body">
+                            <div class="product-img">
+                                <img src="http://placehold.jp/210x210.png" alt="">                                
+                            </div>
+                            <div class="product-name">
+                                Consola Nintendo Switch Red & Blue
+                            </div>
+                        </a>
+                        <div class="product-prices price-list">
+                            <div class="price-container">
+                                <div class="price price--lowest">
+                                    <div class="price-store">Soriana</div>
+                                    <div class="price-amount">
+                                        <strong>$135</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <div class="price">
+                                    <div class="price-store">Chedraui</div>
+                                    <div class="price-amount">
+                                        <strong>$135</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container dropdown">
+                                <div class="price" data-toggle="dropdown">
+                                    <div class="price-store">3 más <span class="caret"></span></div>
+                                    <div class="price-amount">
+                                        <strong>$135</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <table class="table price-table">
+                                        <tbody>
+                                          <tr class="price">
+                                            <th class="price-store">Costco</th>
+                                            <td class="price-amount"><strong>$135</strong><span class="dec">.40</span></td>
+                                          </tr>
+                                          <tr class="price">
+                                            <th class="price-store">Soriana</th>
+                                            <td class="price-amount"><strong>$135</strong><span class="dec">.40</span></td>
+                                          </tr>
+                                          <tr class="price">
+                                            <th class="price-store">Bodega Aurrerá</th>
+                                            <td class="price-amount"><strong>$135</strong><span class="dec">.40</span></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product">
+                        <a href="#" class="save-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="product-body">
+                            <div class="product-img">
+                                <img src="http://placehold.jp/210x210.png" alt="">                                
+                            </div>
+                            <div class="product-name">
+                                TV Samsung 4K Ultra HD Smart QLED TV
+                            </div>
+                        </a>
+                        <div class="product-prices price-list">
+                            <div class="price-container">
+                                <div class="price price--lowest">
+                                    <div class="price-store">Bodega Aurrerá</div>
+                                    <div class="price-amount">
+                                        <strong>$10,350</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <div class="price">
+                                    <div class="price-store">Chedraui</div>
+                                    <div class="price-amount">
+                                        <strong>$13,500</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <div class="price">
+                                    <div class="price-store">Costco</div>
+                                    <div class="price-amount">
+                                        <strong>$11,905</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product">
+                        <a href="#" class="save-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="product-body">
+                            <div class="product-img">
+                                <img src="http://placehold.jp/210x210.png" alt="">                                
+                            </div>
+                            <div class="product-name">
+                                Sueter Cuello Mock Rojo Combinado
+                            </div>
+                        </a>
+                        <div class="product-prices price-list">
+                            <div class="price-container">
+                                <div class="price price--lowest">
+                                    <div class="price-store">Soriana</div>
+                                    <div class="price-amount">
+                                        <strong>$135</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <div class="price">
+                                    <div class="price-store">Chedraui</div>
+                                    <div class="price-amount">
+                                        <strong>$135</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <div class="price">
+                                    <div class="price-store">Costco</div>
+                                    <div class="price-amount">
+                                        <strong>$135</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product">
+                        <a href="#" class="save-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="product-body">
+                            <div class="product-img">
+                                <img src="http://placehold.jp/210x210.png" alt="">                                
+                            </div>
+                            <div class="product-name">
+                                Cereal Zucaritas Kelloggs de 710 Gr.
+                            </div>
+                        </a>
+                        <div class="product-prices price-list">
+                            <div class="price-container">
+                                <div class="price price--lowest">
+                                    <div class="price-store">Soriana</div>
+                                    <div class="price-amount">
+                                        <strong>$135</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <div class="price">
+                                    <div class="price-store">Chedraui</div>
+                                    <div class="price-amount">
+                                        <strong>$135</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="price-container">
+                                <div class="price">
+                                    <div class="price-store">Costco</div>
+                                    <div class="price-amount">
+                                        <strong>$135</strong><span class="dec">.40</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Acerca de Cheklo</h3>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#">Acerca de nosotros</a>
+                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#">Términos y condiciones</a>
+                        <a class="nav-link" href="#">Políticas de privacidad</a>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <h3>Búsquedas populares</h3>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#">Televisiones</a>
+                        <a class="nav-link" href="#">Tablets</a>
+                        <a class="nav-link" href="#">Celulares</a>
+                        <a class="nav-link" href="#">Ropa de dama</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        © Cheklo. Todos los derechos reservados.
+                    </div>
+                    <div class="col-md-6">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script>
+        $('.btn-open-filters').click(function() {
+          $('.form-modal-container').addClass('open');
+          $('body').addClass('modal-open');
+        });
+        $('.btn-close-filters').click(function() {
+          $('.form-modal-container').removeClass('open');
+          $('body').removeClass('modal-open');
+        });
+    </script>
+    </body>
+</html>

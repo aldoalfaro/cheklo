@@ -28,6 +28,17 @@
         @include make-col(12);
     }
 }
+.similar-products .product-list {
+    .product-container {
+        @include media-breakpoint-up(md) {
+            @include make-col(4);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col(3);
+        }
+        @include make-col(12);
+    }
+}
 
 .product {
     @extend .card;

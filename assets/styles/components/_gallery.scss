@@ -1,0 +1,32 @@
+.gallery {
+    margin: 0 auto;
+    @include media-breakpoint-down(md) {
+        margin-bottom: 2rem;
+    }
+}
+.gallery-main-img {
+    text-align: center;
+    img {
+        max-width: 100%;
+    }
+}
+.gallery-thumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -5px;
+    margin-left: -5px;
+    padding-top: 1rem;
+}
+.thumb {
+    @include make-col-ready();
+    @include make-col-auto();
+    padding-right: 5px;
+    padding-left: 5px;
+    img {
+        max-width: 100%;
+        display: block;
+        border: 1px solid #ddd;
+        padding: .25rem;
+    }
+}

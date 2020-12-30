@@ -58,17 +58,21 @@
 .price-table {
     white-space: nowrap;
     margin-bottom: 0;
-
-    th, td, thead th, tbody+tbody {
-        border: 0;
-    }
-    th, td {
-        padding: .5rem;
-    }
     th.price-store {
         font-weight: normal;
     }
     td.price-amount {
         text-align: right;
     }
+}
+.dropdown-menu .price-table {
+    th, td, thead th, tbody+tbody {
+        border: 0;
+    }
+    th, td {
+        padding: .5rem;
+    }
+}
+.product-details-prices .price-table {
+    border-bottom: 1px solid #ddd;
 }

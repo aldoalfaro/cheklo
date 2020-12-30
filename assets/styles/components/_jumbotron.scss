@@ -3,5 +3,13 @@
     h1 {
         font-weight: 300;
         margin-bottom: 2rem;
+        font-size: $font-size-base * 2.5;
+    }
+}
+@include media-breakpoint-down(sm) {
+    .jumbotron {
+        h1 {
+            font-size: $font-size-sm * 2;
+        }
     }
 }
