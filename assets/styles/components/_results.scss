@@ -1,0 +1,28 @@
+.results-container {
+    @include make-row();
+
+    .filters-container,
+    .product-list-container {
+        @include make-col-ready();
+        @include make-col(12);
+    }
+
+    .filters-container {
+        @include media-breakpoint-up(md) {
+            @include make-col(3);
+        }
+        @include media-breakpoint-up(lg) {
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+    }
+    .product-list-container {
+        @include media-breakpoint-up(md) {
+            @include make-col(9);
+        }
+        @include media-breakpoint-up(lg) {
+            flex: 0 0 80%;
+            max-width: 80%;
+        }
+    }
+}

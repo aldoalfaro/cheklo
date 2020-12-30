@@ -1,0 +1,17 @@
+// Colors
+
+$blue:         #006CDC;
+$green:        #8BD64D;
+$green-dark:   #609A30;
+$red:          #DF1106;
+$orange:       #FF9D1D;
+$yellow:       #FFC900;
+
+$primary:       $green;
+$secondary:     $blue;
+$link-color:    $secondary;
+
+// Typography
+
+$font-family-sans-serif:      "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-base:            $font-family-sans-serif;

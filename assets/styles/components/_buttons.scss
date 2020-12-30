@@ -1,0 +1,18 @@
+.btn-primary {
+    color: #fff;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+.btn-outline-standard {
+    color: $body-color;
+    border-color: #ccc;
+
+    &:hover,
+    &:focus {
+        color: $body-color;
+        background-color: #f3f3f3;
+    }
+}

@@ -1,0 +1,12 @@
+.filters {
+    border-radius: .25rem;
+    background-color: #f3f3f3;
+    padding: 1rem;
+}
+.filter {
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

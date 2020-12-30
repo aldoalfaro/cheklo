@@ -1,0 +1,85 @@
+// Headings
+h2 {
+    font-size: $font-size-base * 1.25;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+h3 {
+    font-size: $font-size-base * 1.15;
+    font-weight: bold;
+}
+@include media-breakpoint-down(sm) {
+    h1 {
+        font-size: $font-size-sm * 2;
+    }
+    h2 {
+        font-size: $font-size-sm * 1.5;
+    }
+    h3 {
+        font-size: $font-size-sm * 1.25;
+    }
+}
+
+// Container 
+.page-container {
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+// Utilities
+.bg-red {
+    background-color: $red;
+}
+.bg-blue {
+    background-color: $blue;
+}
+.bg-yellow {
+    background-color: $yellow;
+}
+.bg-green {
+    background-color: $green-dark;
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.shopping-list-icon {
+    background-color: #eee;
+    border-radius: 50%;
+    padding: .25rem;
+    margin-right: .25rem;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import "global/variables";
+@import "vendor/bootstrap/scss/bootstrap";
+
+@import "global/base";
+@import "components/jumbotron";
+@import "components/search";
+@import "components/buttons";
+@import "components/navbar";
+@import "components/product";
+@import "components/category";
+@import "components/price";
+@import "components/results";
+@import "components/filters";
+@import "components/form-modal";
+@import "components/footer";
