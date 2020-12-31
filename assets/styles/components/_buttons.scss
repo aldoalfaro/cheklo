@@ -6,8 +6,9 @@
         color: #fff;
     }
 }
-.btn-outline-standard {
+.btn-standard {
     color: $body-color;
+    background-color: transparent;
     border-color: #ccc;
 
     &:hover,

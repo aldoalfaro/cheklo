@@ -39,7 +39,8 @@
         text-overflow: "";
     }
 }
-.price--lowest .price-amount {
+.price--lowest .price-amount,
+.price--lowest.price-amount {
     color: $green-dark;
 }
 

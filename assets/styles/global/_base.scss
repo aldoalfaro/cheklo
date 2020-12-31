@@ -87,4 +87,24 @@ h3 {
     display: inline-block;
     width: 28px;
     height: 28px;
+    position: relative;
+
+    .counter {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 11px;
+        font-weight: bold;
+        color: #fff;
+        background-color: $green-dark;
+        height: 1.25em;
+        width: 1.25em;
+        border-radius: 50%;
+        line-height: 0;
+        display: block;
+        text-align: center;
+        margin-top: -.25em;
+        margin-right: -.25em;
+        padding-top: .75em;
+    }
 }
