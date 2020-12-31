@@ -1,0 +1,26 @@
+.table-shopping-list {
+    min-width: 100%;
+    @extend .table-hover;
+    @extend .table-bordered;
+    
+    th {
+        font-weight: normal;
+        font-size: .9rem;
+        text-align: right;
+    }
+    td>.product.product--small {
+        border: none;
+        margin: -.75rem;
+        background-color: transparent;
+        &:hover {
+            box-shadow: none;
+        }
+    }
+    .price-amount {
+        text-align: right;
+    }
+    .total td {
+        text-align: right;
+        font-weight: bold;
+    }
+}
